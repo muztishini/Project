@@ -31,14 +31,13 @@ class Order:
 
 ce = ConsumerElectronics(100, 55, "vbn", 6, "mnb", 1, 666)
 ec = ElectronicComponents(200, 44, "ccc", 7, "ffff", 5, 777)
-re = RadioEngineering(300, 33, 4, "asd", 54321, 9, 888)
+re = RadioEngineering(300, 33, "vvvv", 8, "jjjj", 9, 888)
 cust = Customer(1, 2, 3, [100, 55, "vbn", 6, "mnb"])
 empl = Employee(1, "sdf", 123345)
 wh = Warehouse(2)
 # print(wh.ecId)
-
+list_prod_char = []
 if wh.ceId == 1:
-    list_prod_char = []
     list_prod_char.append(ce.power)
     list_prod_char.append(ce.consumption)
     list_prod_char.append(ce.connectors)
@@ -46,7 +45,6 @@ if wh.ceId == 1:
     list_prod_char.append(ce.operating_conditions)
     str_prod_char = "Бытовая электроника: "
 # if wh.ecId == 5:
-#     list_prod_char = []
 #     list_prod_char.append(ec.power)
 #     list_prod_char.append(ec.consumption)
 #     list_prod_char.append(ec.connectors)
