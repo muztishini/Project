@@ -20,7 +20,7 @@ class Employee:
 
 
 class Order:
-    def __init__(self, id: int, payment_type: int, order_status: bool):
+    def __init__(self, id: int, payment_type: str, order_status: bool):
         self.id = id
         self.custId = cust.id
         self.emplId = empl.id
@@ -57,7 +57,7 @@ if empl.prod_char == list_prod_char:
 else:
     os = False
 
-order = Order(1, 2, os)
+order = Order(1, "zzz", os)
 print(f"Заказ №{order.id}.\nТип оплаты: {order.payment_type}.\nХарактеристики заказа: {str_prod_char}\n "+
       f"Мощность: {empl.prod_char[0]},\n Электропотребление: {empl.prod_char[1]},\n Разъемы: {empl.prod_char[2]},"+
       f"\n Размеры: {empl.prod_char[3]},\n Условия эксплуатации: {empl.prod_char[4]}.\nСтатус заказа: {order.order_status}")
